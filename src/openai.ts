@@ -43,7 +43,7 @@ async function getCompletion(username:string,message: string): Promise<string> {
       }
     })
   }else{
-    return "请先执行/cmd prompt命令. \n EXAMPLE: /cmd prompt 你的prompt"
+    return "请输入/cmd prompt + 此次对话的主题 以便开始我的服务 :)"
   }
   console.log("ChatGPT MESSages: ", messages)
   const response = await openai.createChatCompletion({
